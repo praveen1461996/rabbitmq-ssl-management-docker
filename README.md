@@ -44,5 +44,5 @@ If you kept the `--rm` option, it will be deleted directly.
 Verify the client certificates were correctly generated: ls -l /tmp/docker-test
 Inspect the container: docker exec -ti <container-id> /bin/bash
 Check the logs: docker logs <container-id>
-Verify the SSL connection works: openssl s_client -connect 127.0.0.1:12000 -key /tmp/docker-test/key.pem
+Verify the SSL connection works: openssl s_client -connect 127.0.0.1:5671 -key /tmp/docker-test/key.pem
 This last command will result in Verify return code: 19 (self signed certificate in certificate chain), which is normal. We should specify the -CApath, which is inside the Docker container. This test is enough to verify SSL is enabled and the server is reachable from the host system.
