@@ -29,7 +29,7 @@ mkdir -p /tmp/docker-test \
 ```
 
 Here, we bind the port 5671 from the container on the 5671 port on the local host and port for the management interface 15671 to 8080 port on the local host.
-We also share a local directory with the container, to retrieve the client certificate. You can verify client certificates were generated with ls /tmp/docker-test. This directory contains a key store and a trust store, both in the PKCS12 format. Management interface is available at https://localhost:8080
+We also share a local directory with the container, to retrieve the client certificate. You can verify client certificates were generated with ls /tmp/docker-test. This directory contains a key store and a trust store, both in the PKCS12 format. Management interface is available at https://localhost:8080 or https://ip:8080
 
 
 
