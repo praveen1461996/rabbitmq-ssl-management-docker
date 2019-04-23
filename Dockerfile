@@ -25,4 +25,3 @@ RUN /bin/bash /home/server-keys.sh \
 	&& /etc/init.d/rabbitmq-server restart
 EXPOSE 15672 15671 15674 61613 61614
 CMD /bin/bash /home/client-keys.sh && rabbitmq-server
-#sleep infinity
